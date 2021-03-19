@@ -1,20 +1,12 @@
 import {
-  AxiosProvider,
-  Request,
-  Get,
-  Delete,
-  Head,
-  Post,
-  Put,
-  Patch,
-  withAxios,
+  Get
 } from "react-axios";
 import User from "./User";
 
 export default function GetUser() {
   return (
     <div>
-      <b>User-List Abfrage</b>
+      <b>User-List-Request</b>
       <Get url="https://reqres.in/api/users">
         {(error, response, isLoading, makeRequest, axios) => {
           if (error) {
