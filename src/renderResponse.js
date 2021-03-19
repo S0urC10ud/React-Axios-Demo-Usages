@@ -39,6 +39,9 @@ export default function renderResponse(
             last_name={response.data.last_name}
           />
         )}
+        <button onClick={() => makeRequest({ params: { refresh: true } })}>
+          Refresh
+        </button>
       </div>
     );
   }
